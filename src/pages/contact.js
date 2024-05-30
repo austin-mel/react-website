@@ -14,7 +14,7 @@ function Contact(){
                     <p>You can also message me through my <a href="https://www.linkedin.com/in/austin-melendez/">LinkedIn</a> page.</p>
                 </div>
                 <div class="column twthrd">
-                    <div class="contact">
+                    <div class="contactform">
                         <p>FORM</p>
                         <label for="name">Name:</label>
                         <input id="name" name="name"/><br/>

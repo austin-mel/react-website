@@ -5,6 +5,7 @@
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddd;
 }
 
 .content {
@@ -19,6 +20,10 @@
   text-align: end;
 }
 
+.footer a, .footer p {
+  background-color: #f1f1f1;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -27,6 +32,7 @@
 .topnav a {
   float: right;
   display: block;
+  background-color: #333;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -39,13 +45,6 @@
   color: black;
 }
 
-.pdf {
-  width: 100%;
-  height: 1150px;
-  margin: 0;
-  padding: 0;
-}
-
 .column {
   float: left;
   padding: 10px;
@@ -53,18 +52,26 @@
 
 .column.qtr {
   width: 25%;
+  height: fit-content;
 }
 
 .column.hlf {
   width: 50%;
+  height: fit-content;
 }
 
 .column.thrd {
   width: 33%;
+  height: fit-content;
 }
 
 .column.twthrd {
   width: 66%;
+  height: fit-content;
+}
+
+.column.hlf h2, .column.qtr h2, .column.thrd h2, .column.twthrd h2 {
+  text-decoration: underline;
 }
 
 .row::after {
@@ -73,9 +80,48 @@
   clear: both;
 }
 
+.pdf {
+  width: 100%;
+  height: 1150px;
+  margin: 0;
+  padding: 0;
+}
+
+.contactform {
+  text-align: center;
+}
+
+.demobtn {
+  margin-top: 100px;
+}
+
+.demobtn a {
+  text-decoration: none;
+  color: #333;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.demobtn a:hover {
+  color: white;
+  background-color: red;
+}
+
+.projnav button {
+  padding: 15px;
+  margin: 10px 50px;
+  border-radius: 5px;
+}
+
+.projnav button:hover {
+  color: white;
+  background-color: blue;
+}
+
 /* Responsive layout */
 @media screen and (max-width: 600px) {
-  .column.side, .column.middle {
+  .column.qtr, .column.hlf, .column.thrd, .column.twthrd {
     width: 100%;
   }
 }
