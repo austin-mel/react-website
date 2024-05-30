@@ -4,7 +4,7 @@ import Home from "./pages/home";
 import Contact from "./pages/contact";
 import Resume from "./pages/resume";
 import Projects from "./pages/projects";
-import { Route, NavLink, HashRouter, Routes } from "react-router-dom";
+import { Route, HashRouter, Routes } from "react-router-dom";
 
 function App() {
 
