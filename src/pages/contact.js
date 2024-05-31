@@ -1,11 +1,12 @@
 import '../App.css';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import Form from "../components/Contact/contactForm";
 
 function Contact(){
     return(
-        <div>
-            <Navbar />
         <div class="content">
+            <Navbar />
             <div class="row">
                 <div class="column thrd">
                     <h2>Get In Touch</h2>
@@ -14,21 +15,10 @@ function Contact(){
                     <p>You can also message me through my <a href="https://www.linkedin.com/in/austin-melendez/">LinkedIn</a> page.</p>
                 </div>
                 <div class="column twthrd">
-                    <div class="contactform">
-                        <p>FORM</p>
-                        <label for="name">Name:</label>
-                        <input id="name" name="name"/><br/>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email"/><br/>
-                        <label for="text">Message:</label>
-                        <textarea id="text" name="text"></textarea>
-                    </div>
+                    <Form />
                 </div>
             </div>
-        </div>
-        <div class="footer">
-            <p><a href="https://github.com/austin-mel">GitHub</a> | <a href="https://www.linkedin.com/in/austin-melendez/">LinkedIn</a> | Austin Melendez 2023 © </p>
-        </div>
+        <Footer />
         </div>
     );
 };

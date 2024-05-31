@@ -1,29 +1,26 @@
-import '../App.css';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-
-function Home(){
-    return(
+function Project2(){
+    return (
+    <div>
         <div class="content">
-        <Navbar />
             <div class="row">
-                <div class="column qtr">
-                    <h2>Side</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+                <div class="column hlf">
+                    <h2>Weather Data Analysis</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
                 </div>
                 <div class="column hlf">
-                    <h2>Main Content</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-                </div>
-                <div class="column qtr">
-                    <h2>Side</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+                    <h3 class="demobtn"><a href="#test">View Demo</a></h3>
                 </div>
             </div>
-        <Footer />
+            <div class="row">
+                <h2>Project Files</h2>
+            </div>
+            <div class="row">
+                <p>Content & Files</p>
+            </div>
         </div>
+    </div>
     );
 };
 
-export default Home;
+export default Project2;
