@@ -141,6 +141,7 @@ h2 {
   padding: 15px;
   border: 2px solid black;
   border-radius: 50px;
+  font-size: 50px;
 }
 
 .demobtn a:hover {
@@ -159,9 +160,45 @@ h2 {
   background-color: #333;
 }
 
-/* Responsive layout */
-@media screen and (max-width: 600px) {
+.csuslogo {
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.csuslogo img{
+  display: block;
+  border-radius: 50%;
+}
+
+.headshot {
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid black;
+  overflow: hidden;
+}
+
+.headshot img{
+  border-radius: 50%;
+  display: block;
+  transform: scale(1.2);
+}
+
+/* Responsive layout settings */
+@media screen and (max-width: 850px) {
+  .topnav a {
+    padding: 14px 16px;
+    margin-right: 0px;
+    font-size: 8px;
+  }
+
   .column.qtr, .column.hlf, .column.thrd, .column.twthrd {
     width: 100%;
+  }
+
+  .resume {
+    width: 0px;
+    height: 0px;
+
   }
 }
