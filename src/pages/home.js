@@ -13,7 +13,7 @@ function Home(){
             <div class="row">
                 <div class="column qtr">
                     <div class="headshot">
-                        <img src={Headshot} alt="CSUS" height="200px" width="200px"></img>
+                        <img src={Headshot} alt="Headshot" height="200px" width="200px"></img>
                     </div>
                 </div>
                 <div class="column hlf">
@@ -25,7 +25,7 @@ function Home(){
                 </div>
                 <div class="column qtr">
                     <div class="csuslogo">
-                        <img src={CSUSLogo} alt="CSUS" height="200px" width="200px"></img>
+                        <img src={CSUSLogo} alt="CSUS Logo" height="200px" width="200px"></img>
                     </div>
                 </div>
             </div>

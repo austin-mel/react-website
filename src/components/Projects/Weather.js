@@ -29,11 +29,18 @@ function Project2(){
             <div class="row">
                 <div class="column hlf">
                     <h2>Weather Data Analysis</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+                        <h4>Objective:</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+                        <h4>Hypothesis:</h4>
+                            <p>With global temperatures rising due to global warming, the maximum temperature recorded at different stations should trend upwards over time.</p>
+                        <h4>Additional Details:</h4>
+                            <p>To test my hypothesis, I have selected the 5 stations which have data recorded for the longest period of time into the past. To simplify the dataset, I have calculated the average temperature at a given station for each year. This is achieved by obtaining all 365 days of data for each given year and then calculating the median. This calculated median value is then stored in the CSV file along with the corresponding station ID and year.</p>
+                        <h4>Conclusion:</h4>
+                            <p>As seen in my graph, the data generally trends upwards, supporting my initial hypothesis. However, there is some erronious data graphed. I suspect the extreme dips found at certain years along the graph correspond to missing or faulty data. This can be confirmed by checking the dataset for the value under the "quality" flag for those years.</p>
+                            <a href="https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-ghcn" target="_blank" rel="noreferrer">Dataset Documentation</a>
                 </div>
                 <div class="column hlf">
-                    <img alt="Graph" src={Graph} width="700px" height="450px"></img>
+                    <img alt="Weather Data Graph" src={Graph} width="800px" height="550px"></img>
                 </div>
             </div>
             <div class="row">
