@@ -20,8 +20,9 @@ function Projects() {
     }
 
     return(
-        <div class="content">
+        <div>
             <Navbar />
+        <div class="content">
             {project === "project1" ? (
                 <div class="row">
                     <div class="projnav">
@@ -64,6 +65,7 @@ function Projects() {
                     <h3>Oops! Project not found.</h3>
                 </div>
             )}
+        </div>
             <Footer />
         </div>
     );

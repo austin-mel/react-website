@@ -4,8 +4,9 @@ import Footer from '../components/Footer';
 
 function Home(){
     return(
+        <div>
+            <Navbar />
         <div class="content">
-        <Navbar />
             <div class="row">
                 <div class="column qtr">
                     <h2>Side</h2>
@@ -21,7 +22,8 @@ function Home(){
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
                 </div>
             </div>
-        <Footer />
+        </div>
+            <Footer />
         </div>
     );
 };

@@ -16,6 +16,7 @@ h2 {
   background-color: #ddd;
   padding: 10px;
   text-align: center;
+  min-height: 1500px;
 }
 
 .footer {
