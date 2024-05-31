@@ -49,6 +49,10 @@ h2 {
   color: black;
 }
 
+.row {
+  padding-top: 50px;
+}
+
 .column {
   float: left;
   padding: 10px;
@@ -106,8 +110,20 @@ h2 {
 
 }
 
+.contactform button{
+  padding: 15px;
+  margin: 10px 50px;
+  border-radius: 5px;
+}
+
+.contactform button:hover {
+  color: white;
+  background-color: #333;
+}
+
 .contactform label {
   display: block;
+  font-weight: bold;
 }
 
 .contactform input[type=text]:focus, .contactform input[type=email]:focus, .contactform textarea[type=text]:focus{
@@ -128,7 +144,7 @@ h2 {
 
 .demobtn a:hover {
   color: white;
-  background-color: red;
+  background-color: #333;
 }
 
 .projnav button {
@@ -139,7 +155,7 @@ h2 {
 
 .projnav button:hover {
   color: white;
-  background-color: blue;
+  background-color: #333;
 }
 
 /* Responsive layout */

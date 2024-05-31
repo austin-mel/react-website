@@ -8,7 +8,9 @@ function Form() {
             <input type="email" id="email" name="email"/><br/>
                         
             <label for="message">Message:</label>
-            <textarea type="text" id="message" name="message"></textarea>
+            <textarea type="text" id="message" name="message"></textarea><br/>
+
+            <button>Send Email</button>
         </div>
     );
 };

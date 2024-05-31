@@ -23,7 +23,7 @@ function Projects() {
         <div class="content">
             <Navbar />
             {project === "project1" ? (
-                <div class="content">
+                <div class="row">
                     <div class="projnav">
                         <h2>Quick Navigation</h2>
                         <button onClick={switchProject1}>Pharmaceutical Trial</button>
@@ -33,7 +33,7 @@ function Projects() {
                     <Project1 />
                 </div>
             ) : project === "project2" ? (
-                <div class="content">
+                <div class="row">
                     <div class="projnav">
                         <h2>Quick Navigation</h2>
                         <button onClick={switchProject1}>Pharmaceutical Trial</button>
@@ -43,7 +43,7 @@ function Projects() {
                     <Project2 />
                 </div>
             ): project === "project3" ? (
-                <div class="content">
+                <div class="row">
                     <div class="projnav">
                         <h2>Quick Navigation</h2>
                         <button onClick={switchProject1}>Pharmaceutical Trial</button>
@@ -53,7 +53,7 @@ function Projects() {
                     <Project3 />
                 </div>
             ) : (
-                <div class="content">
+                <div class="row">
                     <div class="projnav">
                         <h2>Quick Navigation</h2>
                         <button onClick={switchProject1}>Pharmaceutical Trial</button>
