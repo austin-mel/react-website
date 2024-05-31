@@ -21,6 +21,7 @@ function Home(){
                     <p>My name is Austin Melendez. I'm a student studying Computer Science with an interest in Data Science and Analytics.</p>
                     <p>I am currently studying at California State University Sacramento and will be graduating in 2025.</p>
                     <p>I am eager to gain experience and learn more about the field through interships and volunteer oppourtunities. Please reach out to me if you are interested in working with me!</p>
+                    <p>Feel free to check out my featured projects, GitHub page, and resume to gain an understanding of my skill set.</p>
                 </div>
                 <div class="column qtr">
                     <div class="csuslogo">
