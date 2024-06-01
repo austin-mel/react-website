@@ -1,7 +1,6 @@
 import ReactEmbedGist from "react-embed-gist";
 import { useState } from "react";
 import Graph from "../Projects/Weather/year-temp.png";
-import Time from "../Projects/Weather/time.png";
 
 function Project2(){
     const [file, setFile] = useState("bash");

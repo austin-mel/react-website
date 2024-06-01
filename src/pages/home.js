@@ -6,6 +6,7 @@ import CSUSLogo from "../components/Home/CSUSLogo.jpg";
 import Headshot from "../components/Home/headshot.jpg";
 
 function Home(){
+
     return(
         <div>
             <Navbar />
