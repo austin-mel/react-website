@@ -33,6 +33,13 @@ h2 {
   background-color: #333;
 }
 
+.topnav img {
+  float: left;
+  display: block;
+  background-color: transparent;
+  margin: 1px;
+}
+
 .topnav a {
   float: right;
   display: block;
@@ -82,13 +89,6 @@ h2 {
   content: "";
   display: table;
   clear: both;
-}
-
-.resume {
-  width: 850px;
-  height: 1015px;
-  align-items: center;
-  justify-content: center;
 }
 
 .contactform input[type=text], .contactform input[type=email]{
@@ -187,10 +187,14 @@ h2 {
 
 /* Responsive layout settings */
 @media screen and (max-width: 850px) {
+  * { 
+    width: screen;
+    height: screen;
+  }
+  
   .topnav a {
     padding: 14px 16px;
     margin-right: 0px;
-    font-size: 8px;
   }
 
   .column.qtr, .column.hlf, .column.thrd, .column.twthrd {
@@ -200,6 +204,5 @@ h2 {
   .resume {
     width: 0px;
     height: 0px;
-
   }
 }

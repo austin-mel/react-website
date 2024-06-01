@@ -1,4 +1,29 @@
+import { useState } from "react";
+
 function Project1(){
+    const [file, setFile] = useState("1");
+    const switchFile1 = () => {
+        setFile("");
+        setTimeout(() => {
+            setFile("1");
+        }, 500);
+    };
+    const switchFile2 = () => {
+        setFile("");
+        setTimeout(() => {
+            setFile("2");
+        }, 500);
+    };
+    const switchFile3 = () => {
+        setFile("");
+        setTimeout(() => {
+            setFile("3");
+        }, 500);
+    };
+    const openInNewTab = (url) => {
+        window.open(url, "_blank", "noreferrer");
+    };
+
     return (
     <div>
         <div class="content">
@@ -18,7 +43,22 @@ function Project1(){
             </div>
             <div class="row">
                 <h2>Project Files</h2>
-                <p>(Click to view source code)</p>
+                <p>(Click to view documents/code)</p>
+                <button onClick={switchFile1}>Design Requirements Doc</button> | <button onClick={switchFile2}>Use Case Models</button> | <button role="link" onClick={() => openInNewTab("https://github.com/austin-mel/pharmatrial/tree/main")}>GitHub Repository</button>
+                {file === "1" ? (
+                    <div>
+                    <h4>Design Requirements & Project Information</h4>
+                    <iframe alt="Req & Design Doc" title="Req & Design Doc" src="https://docs.google.com/document/d/e/2PACX-1vQRID_esZ3L1qCeVmSitp1NVSGdn2w1EzbF-uHO_BFrJBnAvaKVgTvHkfqOTUK1_Q2GgauYn3Db2P_G/pub?embedded=true" width="850px" height="1015px"></iframe>
+                    </div>
+                ) : file === "2" ? (
+                    <div>
+                    <h4>Use Case Models</h4>
+                    <p>Lorem...</p>
+                    <p>EMBED</p>
+                    </div>
+                ) : (
+                    <p>Loading ...</p>
+                )}
             </div>
         </div>
     </div>

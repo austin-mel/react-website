@@ -18,7 +18,7 @@ function Project3(){
             </div>
             <div class="row">
                 <h2>Project Files</h2>
-                <p>(Click to view source code)</p>
+                <p>(Click to view documents/code)</p>
             </div>
         </div>
     </div>
