@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import { useState } from 'react';
 import Project1 from "../components/Projects/Pharma";
 import Project2 from "../components/Projects/Weather";
-import Project3 from "../components/Projects/Chatroom";
+import Project3 from "../components/Projects/MLTweets";
 
 
 function Projects() {
@@ -29,7 +29,7 @@ function Projects() {
                         <h2>Available Projects</h2>
                         <button onClick={switchProject1}>Pharmaceutical Trial</button>
                         <button onClick={switchProject2}>Weather Data Analytics</button>
-                        <button onClick={switchProject2}>Python Chatroom</button>
+                        <button onClick={switchProject3}>ML in Russian Bot Tweets</button>
                     </div>
                     <Project1 />
                 </div>
@@ -39,7 +39,7 @@ function Projects() {
                         <h2>Available Projects</h2>
                         <button onClick={switchProject1}>Pharmaceutical Trial</button>
                         <button onClick={switchProject2}>Weather Data Analytics</button>
-                        <button onClick={switchProject3}>Python Chatroom</button>
+                        <button onClick={switchProject3}>ML in Russian Bot Tweets</button>
                     </div>
                     <Project2 />
                 </div>
@@ -49,7 +49,7 @@ function Projects() {
                         <h2>Available Projects</h2>
                         <button onClick={switchProject1}>Pharmaceutical Trial</button>
                         <button onClick={switchProject2}>Weather Data Analytics</button>
-                        <button onClick={switchProject3}>Python Chatroom</button>
+                        <button onClick={switchProject3}>ML in Russian Bot Tweets</button>
                     </div>
                     <Project3 />
                 </div>
@@ -59,7 +59,7 @@ function Projects() {
                         <h2>Quick Navigation</h2>
                         <button onClick={switchProject1}>Pharmaceutical Trial</button>
                         <button onClick={switchProject2}>Weather Data Analytics</button>
-                        <button onClick={switchProject3}>Python Chatroom</button>
+                        <button onClick={switchProject3}>ML in Russian Bot Tweets</button>
                     </div>
                     <h1>Error!</h1>
                     <h3>Oops! Project not found.</h3>
