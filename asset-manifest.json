@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/react-website/static/css/main.6c3e25a1.css",
-    "main.js": "/react-website/static/js/main.645e0a36.js",
+    "main.css": "/react-website/static/css/main.307c31a0.css",
+    "main.js": "/react-website/static/js/main.7a396678.js",
+    "static/media/year-temp.png": "/react-website/static/media/year-temp.17a30ff8da5a24a6f1b6.png",
+    "static/media/headshot.jpg": "/react-website/static/media/headshot.2b7a197adbd21d14bbab.jpg",
+    "static/media/CSUSLogo.jpg": "/react-website/static/media/CSUSLogo.d9e482e1ba035d5f718c.jpg",
     "index.html": "/react-website/index.html",
-    "main.6c3e25a1.css.map": "/react-website/static/css/main.6c3e25a1.css.map",
-    "main.645e0a36.js.map": "/react-website/static/js/main.645e0a36.js.map"
+    "main.307c31a0.css.map": "/react-website/static/css/main.307c31a0.css.map",
+    "main.7a396678.js.map": "/react-website/static/js/main.7a396678.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c3e25a1.css",
-    "static/js/main.645e0a36.js"
+    "static/css/main.307c31a0.css",
+    "static/js/main.7a396678.js"
   ]
 }
