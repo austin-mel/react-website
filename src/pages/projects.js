@@ -20,12 +20,13 @@ function Projects() {
     }
 
     return(
-        <div class="content">
+        <div>
             <Navbar />
+        <div class="content">
             {project === "project1" ? (
                 <div class="row">
                     <div class="projnav">
-                        <h2>Quick Navigation</h2>
+                        <h2>Available Projects</h2>
                         <button onClick={switchProject1}>Pharmaceutical Trial</button>
                         <button onClick={switchProject2}>Weather Data Analytics</button>
                         <button onClick={switchProject2}>Python Chatroom</button>
@@ -35,7 +36,7 @@ function Projects() {
             ) : project === "project2" ? (
                 <div class="row">
                     <div class="projnav">
-                        <h2>Quick Navigation</h2>
+                        <h2>Available Projects</h2>
                         <button onClick={switchProject1}>Pharmaceutical Trial</button>
                         <button onClick={switchProject2}>Weather Data Analytics</button>
                         <button onClick={switchProject3}>Python Chatroom</button>
@@ -45,7 +46,7 @@ function Projects() {
             ): project === "project3" ? (
                 <div class="row">
                     <div class="projnav">
-                        <h2>Quick Navigation</h2>
+                        <h2>Available Projects</h2>
                         <button onClick={switchProject1}>Pharmaceutical Trial</button>
                         <button onClick={switchProject2}>Weather Data Analytics</button>
                         <button onClick={switchProject3}>Python Chatroom</button>
@@ -64,6 +65,7 @@ function Projects() {
                     <h3>Oops! Project not found.</h3>
                 </div>
             )}
+        </div>
             <Footer />
         </div>
     );
