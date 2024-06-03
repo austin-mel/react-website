@@ -219,6 +219,11 @@ h2 {
   cursor: pointer;
 }
 
+.recaptcha {
+  width: 304px;
+  margin: 0 auto;
+}
+
 /* Responsive layout settings */
 @media screen and (max-width: 850px) {
   * { 
