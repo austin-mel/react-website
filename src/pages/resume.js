@@ -1,10 +1,11 @@
 import '../App.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import myResume from "../components/Resume/resume.pdf";
 
 function Resume(){
     const handleDownload = () => {
-        const pdfURL = "resume.pdf";
+        const pdfURL = myResume;
         const link = document.createElement("a");
         link.href = pdfURL;
         link.download = "AustinMelendez-Resume.pdf";
