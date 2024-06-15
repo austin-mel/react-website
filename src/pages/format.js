@@ -5,19 +5,10 @@ import CSUSLogo from "../components/images/CSUSLogo.jpg"
 import Navbar from "../components/Navbar";
 import Form from "../components/Home/contactForm";
 import Footer from "../components/Footer";
-import "../styles/Home.css";
-import 'animate.css';
+import "../styles/Test.css";
 
 
-function Home() {
-    function openResume(){
-        window.open("http://www.austinmelendez.com/#/resume","_self");
-    };
-
-    function openProjects(){
-        window.open("http://www.austinmelendez.com/#/projects","_self");
-    };
-
+function Format() {
     return (
         <>
         <header>
@@ -36,13 +27,13 @@ function Home() {
                 <p className="star-text">My name is Austin Melendez. <br/><br/> I'm double majoring in Computer Science and Statistics with an interest in Data Science and Analytics. <br/><br/>
                                     I'm currently studying at California State University Sacramento and will be graduating in 2026.</p>
             </div>
-            <div className="arrow-box">
-                <h2 className="arrow-text animate__animated animate__bounceInLeft">Hello There!</h2>
+            <div class="arrow-box">
+                <h2 class="arrow-text">Hello There!</h2>
             </div>
             <img className="csuslogo" src={CSUSLogo} alt="CSUS Logo" height="200px" width="200px"></img>
         </div>
         <div className="section second">
-            <div className="polygon-banner animate__animated animate__zoomInRight"><h2>Get In Touch!</h2></div>
+            <div className="polygon-banner"><h2>Get In Touch!</h2></div>
             <div className="bubble">
                 <Form />
             </div>
@@ -54,10 +45,10 @@ function Home() {
             </div>
         </div>
         <div className="section third">
-            <div className="circle projects animate__animated animate__zoomInLeft" onClick={openProjects}>
+            <div className="circle projects">
                 <h3 className="circle-text projects">View my<br/>featured<br/>projects</h3>
             </div>
-            <div className="circle resume animate__animated animate__zoomInRight" onClick={openResume}>
+            <div className="circle resume">
                 <h3 className="circle-text resume">View my<br/>current<br/>resume</h3>
             </div>
             <div className="triangle-bottom"></div>
@@ -70,4 +61,4 @@ function Home() {
     );
 };
 
-export default Home;
+export default Format;

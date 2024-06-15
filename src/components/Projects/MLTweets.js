@@ -27,6 +27,10 @@ function Project3(){
             <div class="row">
                 <h2>Project Files</h2>
                 <p>(Click to view documents/code)</p>
+                <button className="fileSelectorBtn" >file 1</button> 
+                <button className="fileSelectorBtn" >file 2</button>
+                <button className="fileSelectorBtn" >file 3</button>
+
             </div>
         </div>
     </div>

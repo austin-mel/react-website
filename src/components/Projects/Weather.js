@@ -78,7 +78,9 @@ function Project2(){
             <div class="row">
                 <h2>Project Files</h2>
                 <p>(Click to view code)</p>
-                <button onClick={switchBashFile}>tempovertime.sh</button> | <button onClick={switchPythonFile}>calcmedian.py</button> | <button onClick={switchCSVFile}>station-year-temp.csv</button>
+                <button className="fileSelectorBtn" onClick={switchBashFile}>tempovertime.sh</button> 
+                <button className="fileSelectorBtn" onClick={switchPythonFile}>calcmedian.py</button>
+                <button className="fileSelectorBtn" onClick={switchCSVFile}>station-year-temp.csv</button>
                 {file === "bash" ? (
                     <div>
                         <h4>Bash Script</h4>

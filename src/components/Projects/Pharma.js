@@ -1,4 +1,12 @@
 import { useState } from "react";
+import BavariaUseCase from "./Pharma/bavaria.png";
+import FDAUseCase from "./Pharma/fda.png";
+import JHAdminUseCase from "./Pharma/jhadmin.png";
+import JHDoctorUseCase from "./Pharma/jhdoctor.png";
+import drugDiagram from "./Pharma/drug.png";
+import patientDiagram from "./Pharma/patient.png";
+import studyDiagram from "./Pharma/study.png";
+import ERD from "./Pharma/ER.png";
 
 function Project1(){
     const [file, setFile] = useState("1");
@@ -46,7 +54,9 @@ function Project1(){
             <div class="row">
                 <h2>Project Files</h2>
                 <p>(Click to view documents/code)</p>
-                <button onClick={switchFile1}>Design Requirements Doc</button> | <button onClick={switchFile2}>Use Case Models</button> | <button role="link" onClick={() => openInNewTab("https://github.com/austin-mel/pharmatrial/tree/main")}>GitHub Repository</button>
+                <button className="fileSelectorBtn" onClick={switchFile1}>Design Requirements Doc</button>
+                <button className="fileSelectorBtn" onClick={switchFile2}>Use Case Models</button>
+                <button className="fileSelectorBtn" onClick={() => openInNewTab("https://github.com/austin-mel/pharmatrial/tree/Port")}>Original GitHub Repository</button>
                 {file === "1" ? (
                     <div>
                     <h4>Design Requirements & Project Information</h4>
@@ -54,9 +64,17 @@ function Project1(){
                     </div>
                 ) : file === "2" ? (
                     <div>
-                    <h4>Use Case Models</h4>
-                    <p>Lorem...</p>
-                    <p>EMBED</p>
+                    <h4>Diagrams & Models</h4>
+                    <img src={FDAUseCase} alt="FDA Use Case Model" width="750" height="450" />
+                    <img src={BavariaUseCase} alt="Bavaria Use Case Model" width="750" height="450" />  
+                    <img src={JHAdminUseCase} alt="JH Admin Use Case Model" width="750" height="450" />
+                    <img src={JHDoctorUseCase} alt="JH Doctor Use Case Model" width="750" height="450" />
+                    <br />
+                    <img src={patientDiagram} alt="Patient Table" width="450" height="750" />
+                    <img src={studyDiagram} alt="Study Table" width="550" height="850" />
+                    <img src={drugDiagram} alt="Drug Table" width="450" height="750" />
+                    <br />
+                    <img src={ERD} alt="Entity Relationship Diagram" width="450" height="750" />                 
                     </div>
                 ) : (
                     <p>Loading ...</p>

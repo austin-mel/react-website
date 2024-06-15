@@ -1,23 +1,24 @@
 import './App.css';
+import 'animate.css';
 import React from "react";
 import Home from "./pages/home";
 import Resume from "./pages/resume";
 import Projects from "./pages/projects";
 import { Route, HashRouter, Routes } from "react-router-dom";
+import Test from './pages/test';
+import Format from './pages/format';
 
 function App() {
 
   return (
     <HashRouter>
-      <div className="App">
-        <div className="content">
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
             <Route exact path="/resume" element={<Resume />}></Route>
             <Route exact path="/projects" element={<Projects />}></Route>
+            <Route exact path='/test' element={<Test />}></Route>
+            <Route exact path='/format' element={<Format />}></Route>
           </Routes>
-        </div>
-      </div>
     </HashRouter>
   );
 }
