@@ -6,13 +6,11 @@
 
 header {
   margin: 0px;
-  background-color: #EADBC8;
   z-index: 1;
 }
 
 body {
   margin: 0px;
-  background-color: #EADBC8;
 }
 
 footer {
@@ -22,109 +20,10 @@ footer {
   z-index: 1;
 }
 
-
-
-
 .box2 {
   background-color: yellow;
   height: 150px;
   width: 150px;
 }
 
-
-/* Responsive Design */
-@media screen and (max-width: 850px) {
-  * { 
-    width: screen;
-    height: screen;
-    overflow: hidden;
-  }
-
-  .phonenav {
-    visibility: visible;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    width: 100%;
-    height: 70px;
-    background-color: #102c57;
-  }
-
-  .triangle {
-    visibility: hidden;
-  }
-  
-  .logo {
-    position: relative;
-    height: 115px;
-    width: 115px;
-    z-index: 3;
-    top: -23px;
-    left: -5px;
-  }
-
-  .signature {
-    visibility: hidden;
-  }
-  
-  .navbar a {
-    font-size: 12px;
-    padding-left: 15px;
-    padding-right: 15px;
-    justify-content: center;
-  }
-
-  .navbar a:hover {
-    color: #DAC0A3;
-  }
-
-  .headshot {
-    height: 0;
-    width: 0;
-    border: none;
-   }
-
-   .star-eight {
-    height: 0;
-    width: 0;   
-  }
-
-   .arrow-text { 
-    height: 0;
-    width: 0;   
-  }
-
-  .csuslogo {
-    height: 0;
-    width: 0; 
-    border: none; 
-  }
-
-  .polygon-banner {
-    height: 0;
-    width: 0;  
-  }
-
-  .bubble {
-    height: 0;
-    width: 0;
-  }
-
-  .burst-12 {
-    height: 0;
-    width: 0;
-  }
-
-  .circle {
-    height: 0;
-    width: 0;
-  }
-
-  .triangle-bottom{
-    height: 0;
-    width: 0;
-  }
-
-}
 

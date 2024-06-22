@@ -38,7 +38,7 @@ function Form() {
 
     return (
         <div>
-            <form action="?" class="contactform" onSubmit={sendEmail}>
+            <form action="?" className="contactform" onSubmit={sendEmail}>
                 <label for="email">Your Email:</label>
                 <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required/><br/>
 
