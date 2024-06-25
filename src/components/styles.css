@@ -1,447 +1,249 @@
-.App {
-  text-align: center;
-}
-
-* {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-h2 {
-  text-decoration: underline;
-}
-
-.content {
-  background-color: white;
-  text-align: center;
-  min-height: 1500px;
-}
-
-.footer {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: end;
-}
-
-.footer a, .footer p {
-  background-color: #f1f1f1;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav img {
-  float: left;
-  display: block;
-  background-color: transparent;
-  margin: 1px;
-}
-
-.topnav a {
-  float: right;
-  display: block;
-  background-color: #333;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  margin-right: 50px;
-  text-decoration: none;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.row {
-  padding-top: 50px;
-}
-
-.column {
-  float: left;
-  padding: 10px;
-}
-
-.column.qtr {
-  width: 25%;
-  height: fit-content;
-}
-
-.column.hlf {
-  width: 50%;
-  height: fit-content;
-}
-
-.column.thrd {
-  width: 33%;
-  height: fit-content;
-}
-
-.column.twthrd {
-  width: 66%;
-  height: fit-content;
-}
-
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.contactform input[type=text], .contactform input[type=email]{
-  width: 55%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border-radius: 5px;
-  border: 1px solid grey;
-}
-
-.contactform textarea[type=text]{
-  width: 55%;
-  height: 150px;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border-radius: 5px;
-  border: 1px solid grey;
-  resize: none;
-
-}
-
-.contactform button{
-  padding: 15px;
-  margin: 10px 50px;
-  border-radius: 5px;
-}
-
-.contactform button:hover {
-  color: white;
-  background-color: #333;
-}
-
-.contactform label {
-  display: block;
-  font-weight: bold;
-}
-
-.contactform input[type=text]:focus, .contactform input[type=email]:focus, .contactform textarea[type=text]:focus{
-  background-color: lightblue;
-}
-
-.demobtn {
-  margin-top: 200px;
-}
-
-.demobtn a {
-  text-decoration: none;
-  color: #333;
-  padding: 15px;
-  border: 2px solid black;
-  border-radius: 50px;
-  font-size: 50px;
-}
-
-.demobtn a:hover {
-  color: white;
-  background-color: #333;
-}
-
-.projnav button {
-  padding: 25px;
-  margin: 10px 50px;
-  border-radius: 5px;
-}
-
-.projnav button:hover {
-  color: white;
-  background-color: #333;
-}
-
-.csuslogo {
-  display: inline-block;
-  border-radius: 50%;
-  border: 2px solid black;
-}
-
-.csuslogo img{
-  display: block;
-  border-radius: 50%;
-}
-
-.headshot {
-  display: inline-block;
-  border-radius: 50%;
-  border: 2px solid black;
-  overflow: hidden;
-}
-
-.headshot img{
-  border-radius: 50%;
-  display: block;
-  transform: scale(1.3);
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% 10%;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close {
-  background-color: #fefefe;
-  float: right;
-  font-size: 50px;
-  font-weight: bold;
-  padding-right: 15px;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.recaptcha {
-  width: 304px;
-  margin: 0 auto;
-}
-
-.fileSelectorBtn {
-  padding: 15px;
-  margin: 5px 35px;
-  border-radius: 5px;
-}
-
-.fileSelectorBtn:hover {
-  color: white;
-  background-color: #333;
-}
-
-/* Responsive layout settings */
-@media screen and (max-width: 850px) {
-  * { 
-    width: screen;
-    height: screen;
+/* Responsive Design */
+@media screen and (max-width: 1750px) {
+  .starburst {
+    transform: scale(1.1);
   }
   
-  .topnav a {
-    padding: 14px 16px;
-    margin-right: 0px;
-  }
-
-  .column.qtr, .column.hlf, .column.thrd, .column.twthrd {
-    width: 100%;
-  }
-
-  .resume {
-    width: 0px;
-    height: 0px;
+  .signature {
+    transform: scale(0.7);
   }
 }
 
+@media screen and (max-width: 1500px) {
+  .headshot {
+    left: 30%;
+  }
 
-/* OTHER STYLE SHEET */
+  .arrow-1 {
+    transform: scale(0.8);
+    left: 12%;
+  }
 
-/*Formatting */
-* {
-  box-sizing: border-box;
-  font-family: Verdana;
+  .starburst {
+    left: 46%;
+  }
+
+  .spbubble {
+    transform: scale(1.2);
+  }
+
+  .circle.projects {
+    transform: scale(0.8);
+    top: 410%;
+    left: 45%;
+  }
+
+  .circle.resume {
+    transform: scale(0.8);
+    top: 430%;
+  }
 }
 
-body {
-  margin: 0px;
-  background-color: #EADBC8;
-  overflow: hidden;
+@media screen and (max-width: 1250px) {
+  .arrow {
+    transform: scale(1.2);
+    top: 45%;
+    left: 10%;
+  }
+
+  .headshot {
+    top: 72%;
+    left: 12%;
+  }
+
+  .star-8 {
+    transform: scale(1.2);
+  }
+
+  .starburst {
+    left: 35%;
+  }
+
+  .arrow-1 {
+    left: 2%;
+    transform: rotate(30deg);
+  }
+
+  .spbubble {
+    top: 365%;
+  }
+
+  .circle.projects {
+    top: 435%;
+    left: 35%;
+  }
+
+  .circle.resume {
+    top: 455%;
+    left: 65%;
+  }
 }
 
-.container {
-  text-align: center;
-  display: flex;
+@media screen and (max-width: 1000px) {
+
+  .body {
+    overflow: hidden;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .phonenav {
+    visibility: visible;
+  }
+
+  .triangle {
+    display: none;
+  }
+  
+  .logo {
+    position: relative;
+    height: 115px;
+    width: 115px;
+    z-index: 3;
+    top: -23px;
+    left: -5px;
+  }
+
+  .signature {
+    display: none;
+  }
+  
+  .triangle-bottom {
+    display: none;
+  }
+
+  .arrow {
+    transform: scale(1.1);
+    left: 21%;
+    top: 25%;
+  }
+
+  .arrow h2 {
+    max-width: 325px;
+  }
+  
+  .headshot {
+    transform: scale(0.75) rotate(-30deg);
+    left: 0%;
+    top: 50%;
+  }
+
+  .star-8 {
+    top: 105%;
+    left: 28%;
+  }
+
+  .csuslogo {
+    left: 25%;
+    top: 45%;
+  }
+
+  .blob {
+    transform: scale(1.1);
+    top: 220%;
+    left: 24%;
+  }
+
+  .blob h3 {
+    max-width: 325px;
+  }
+
+  .recaptcha {
+    max-width: 325px;
+  }
+
+  .arrow-1 {
+    display: none;
+  }
+
+  .starburst {
+    left: 5%;
+    transform: scale(1);
+  }
+
+  .spbubble {
+    transform: scale(1);
+    left: 18%;
+    top: 350%;
+  }
+
+  .circle.projects {
+    top: 425%;
+    left: 10%;
+  }
+
+  .circle.resume {
+    top: 439%;
+    left: 55%;
+  }
+
 }
 
-.section {
-  display:flex;
+@media screen and (max-width: 750px) {
+  * { border: 1px solid red !important; }
+
+  .navbar a {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+  } 
+
+  .arrow {
+    transform: scale(0.6);
+    left: -24%;
+    top: 20%;
+  }
+
+  .headshot {
+    transform: scale(0.5) rotate(-30deg);
+    top: 35%;
+    left: -52.5%;
+  }
+
+  .star-8 {
+    transform: scale(0.5);
+    top: 65%;
+    left: 0%;
+  }
+
+  .csuslogo {
+    transform: scale(0.5);
+    left: 50%;
+    top: 80%;
+  }
+
+  .blob {
+    transform: scale(0.5);
+    top: 115%;
+    left: 0%;
+  }
+
+  .starburst {
+    transform: scale(0.5);
+    top: 145%;
+    left: 0%;
+  }
+
+  .spbubble {
+    transform: scale(0.5);
+    left: 0%;
+    top: 180%;
+  }
+
+  .circle.projects {
+    transform: scale(0.5);
+    top: 210%;
+  }
+  .circle.resume {
+    transform: scale(0.5);
+    top: 225%;
+    left: 25%;
+  }
 }
 
-.row {
-  padding-top: 50px;
-}
-
-.column {
-  float: left;
-  padding: 10px;
-}
-
-.column.qtr {
-  width: 25%;
-  height: fit-content;
-}
-
-.column.hlf {
-  width: 50%;
-  height: fit-content;
-}
-
-.column.thrd {
-  width: 33%;
-  height: fit-content;
-}
-
-.column.twthrd {
-  width: 66%;
-  height: fit-content;
-}
-
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Header */
-.section.header {
-  width: 100%;
-  height: 170px;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-.logo {
-  position: relative;
-  height: 250px;
-  width: 250px;
-  z-index: 2;
-  top: -30px;
-  left: -30px;
-}
-
-.logo:first-child {
-  margin-right:  auto;
-}
-
-.signature { 
-  position: absolute;
-  height: 350px;
-  width: 350px;
-  z-index: 2;
-  top: -20px;
-  right: -50px;
-  overflow: hidden;
-}
-
-.navbar {
-  position: relative;
-  z-index: 3;
-  top: 0;
-  right: 0;
-  padding-top: 20px;
-}
-
-.navbar a {
-  font-size: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-.navbar a:hover {
-  background-color: #102c57;
-  color: #DAC0A3;
-}
-
-
-/* Scrollable page */
-.content {
-  text-align: center;
-  min-height: 1500px;
-}
-
-/* Modal */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% 10%;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close {
-  background-color: #fefefe;
-  float: right;
-  font-size: 50px;
-  font-weight: bold;
-  padding-right: 15px;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.recaptcha {
-  width: 304px;
-  margin: 0 auto;
-}
-
-/* Footer */
-.footer{
-  display: sticky;
-}
-
-
-/* Responsive Design */
-
-
-/* Shapes */
-.triangle {
---r:15px;
-width: 450px;
-aspect-ratio: 1;
-border-top-right-radius: var(--r);
-clip-path: polygon(100% 100%,0 0,100% 0);
---_g:calc(50%*(1 + 1/tan(22.5deg)) - var(--r)/(3*sqrt(2) - 4));
---_r:calc(var(--r)/tan(22.5deg)),#000 98%,#0000 101%;
--webkit-mask:
-  radial-gradient(var(--r) at top   var(--r) left   var(--_r)),
-  radial-gradient(var(--r) at right var(--r) bottom var(--_r)),
-  conic-gradient(from 22.5deg at calc(100% - var(--_g)) var(--_g),#000 45deg,#0000 0);
-background: #102c57;
-margin-top: -15px;
-position: absolute;
-top: 0;
-right: 0;
+@media screen and (max-width: 350px) {
+  
 }

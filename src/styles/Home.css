@@ -1,4 +1,5 @@
 /* Background */
+
 .body {
   background-image: url("../components/images/background.png");
   background-repeat: repeat;
@@ -9,6 +10,7 @@ header {
   background-image: url("../components/images/headerbackground.png");
   background-repeat: repeat;
   background-size: 100%;
+  overflow-x: hidden;
 }
 
 /* Header */
@@ -23,6 +25,11 @@ header {
 }
 
 .phonenav {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  right: 0;
+  background-color: #102c57;
   visibility: hidden;
 }
 
@@ -461,23 +468,58 @@ header {
   }
 }
 
-@media screen and (max-width: 1300px) {
-  
+@media screen and (max-width: 1250px) {
+  .arrow {
+    transform: scale(1.2);
+    top: 45%;
+    left: 10%;
+  }
+
+  .headshot {
+    top: 72%;
+    left: 12%;
+  }
+
+  .star-8 {
+    transform: scale(1.2);
+  }
+
+  .starburst {
+    left: 35%;
+  }
+
+  .arrow-1 {
+    left: 2%;
+    transform: rotate(30deg);
+  }
+
+  .spbubble {
+    top: 365%;
+  }
+
+  .circle.projects {
+    top: 435%;
+    left: 35%;
+  }
+
+  .circle.resume {
+    top: 455%;
+    left: 65%;
+  }
 }
-
-
 
 @media screen and (max-width: 1000px) {
 
+  .body {
+    overflow: hidden;
+  }
+
+  .logo {
+    display: none;
+  }
+
   .phonenav {
     visibility: visible;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    width: 100%;
-    height: 70px;
-    background-color: #102c57;
   }
 
   .triangle {
@@ -497,27 +539,101 @@ header {
     display: none;
   }
   
-  .navbar a {
-    font-size: 12px;
-    padding-left: 15px;
-    padding-right: 15px;
-    justify-content: center;
+  .triangle-bottom {
+    display: none;
   }
 
-  .navbar a:hover {
-    color: #DAC0A3;
+  .arrow {
+    transform: scale(1.1);
+    left: 21%;
+    top: 25%;
+  }
+
+  .arrow h2 {
+    max-width: 325px;
+  }
+  
+  .headshot {
+    transform: scale(0.75) rotate(-30deg);
+    left: 0%;
+    top: 50%;
+  }
+
+  .star-8 {
+    top: 105%;
+    left: 28%;
+  }
+
+  .csuslogo {
+    left: 25%;
+    top: 45%;
+  }
+
+  .blob {
+    transform: scale(1.1);
+    top: 220%;
+    left: 24%;
+  }
+
+  .blob h3 {
+    max-width: 325px;
+  }
+
+  .recaptcha {
+    max-width: 325px;
+  }
+
+  .arrow-1 {
+    display: none;
+  }
+
+  .starburst {
+    left: 5%;
+    transform: scale(1);
+  }
+
+  .spbubble {
+    transform: scale(1);
+    left: 18%;
+    top: 350%;
+  }
+
+  .circle.projects {
+    top: 425%;
+    left: 10%;
+  }
+
+  .circle.resume {
+    top: 439%;
+    left: 55%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+
+  .navbar a {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+  } 
+
+  .arrow {
+    transform: scale(0.8);
+    left: 0%;
+    top: 20%;
   }
 
   .headshot {
-    display: none;
-   }
-
-   .star-8 {
-    display: none;
+    transform: scale(0.5) rotate(-30deg);
+    top: 35%;
+    left: 0%;
   }
 
-   .arrow { 
-    display: none; 
+  .star-8 {
+    transform: scale(0.7);
+    top: 70%;
+    left: 0%;
   }
 
   .csuslogo {
@@ -525,33 +641,220 @@ header {
   }
 
   .blob {
-    display: none;
-  }
-
-  .arrow-1 {
-    display: none;
-  }
-
-  .spbubble {
-    display: none;
+    transform: scale(0.8);
+    top: 115%;
+    left: 20%;
   }
 
   .starburst {
-    display: none;
+    transform: scale(0.6);
+    top: 155%;
+    left: -5%;
   }
 
-  .circle.projects{
-    display: none;
-    top: 02%;
-  }
-
-  .circle.resume {
-    display: none;
+  .spbubble {
+    transform: scale(0.6);
+    left: 10%;
     top: 200%;
   }
 
-  .triangle-bottom{
+  .circle.projects {
+    transform: scale(0.5);
+    top: 250%;
+  }
+  .circle.resume {
+    transform: scale(0.5);
+    top: 265%;
+    left: 45%;
+  }
+
+  .section.fourth {
+    height: 0;
+  }
+
+  .section.fifth {
+    height: 0;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .arrow {
+    left: -5%;
+  }
+
+  .headshot {
+    top: 35%;
+    left: -25%;
+  }
+  
+  .blob {
+    top: 115%;
+    left: 0%;
+  }
+
+  .spbubble {
+    left: -10%;
+  }
+
+  .circle.projects {
+    left: 0%;
+  }
+  
+  .circle.resume {
+    left: 35%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .arrow {
+    transform: scale(0.6);
+    left: -15%;
+    top: 20%;
+  }
+
+  .headshot {
+    transform: scale(0.4) rotate(-30deg);
+    top: 35%;
+    left: -30%;
+  }
+
+  .star-8 {
+    transform: scale(0.6);
+    top: 70%;
+    left: 0%;
+  }
+
+  .blob {
+    transform: scale(0.6);
+    left: -12%;
+  }
+
+  .starburst {
+    transform: scale(0.5);
+    left: -15%;
+  }
+
+  .spbubble {
+    transform: scale(0.5);
+    left: -20%;
+  }
+
+  .circle.projects {
+    left: -10%;
+  }
+
+  .circle.resume {
+    left: 25%;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .headshot {
+    left: -45%;
+  }
+  
+}
+
+@media screen and (max-width: 400px) {
+
+  .arrow {
+    left: -22%;
+  }
+
+  .headshot {
+    left: -54%;
+  }
+
+  .star-8 {
+    left: -15%;
+  }
+
+  .blob {
+    left: -28%;
+  }
+
+  .starburst {
+    left: -30%;
+  }
+
+  .spbubble {
+    left: -30%;
+  }
+
+  .circle.projects {
+    left: -20%;
+  }
+
+  .circle.resume {
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .arrow {
+    left: -30%;
+  }
+
+  .headshot {
+    left: -67%;
+  }
+
+  .navbar a {
+    font-size: 12pt;
+  } 
+}
+
+@media screen and (max-width: 350px) {
+
+  .footer {
     display: none;
   }
 
+  .navbar a {
+    font-size: 10pt;
+  } 
+
+  .arrow {
+    transform: scale(0.5);
+    left: -35%;
+  }
+
+  .headshot {
+    transform: scale(0.35) rotate(-30deg);
+    left: -65%;
+  }
+
+  .star-8 {
+    left: -25%;
+  }
+
+  .blob {
+    left: -35%;
+  }
+
+  .starburst {
+    left: -40%;
+  }
+  
+  .spbubble {
+    left: -40%;
+  }
+
+  .circle.projects {
+    transform: scale(0.4);
+  }
+
+  .circle.resume {
+    transform: scale(0.4);
+  }
+}
+
+@media screen and (max-width: 325px) {
+  * { border: 1px solid red !important; }
+}
+
+@media screen and (max-width: 300px) {
+  * { border: 1px solid red !important; }
 }
