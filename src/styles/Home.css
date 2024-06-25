@@ -1,16 +1,13 @@
-/* Background */
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 
-.body {
+/* Background */
+div#root {
   background-image: url("../components/images/background.png");
   background-repeat: repeat;
   background-size: 100%;
-}
-
-header {
-  background-image: url("../components/images/headerbackground.png");
-  background-repeat: repeat;
-  background-size: 100%;
   overflow-x: hidden;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 /* Header */
@@ -20,8 +17,7 @@ header {
   justify-content: flex-end;
   overflow: hidden;
   width: 100vw;
-  height: 650px;
-  z-index: 1;
+  height: 75px;
 }
 
 .phonenav {
@@ -50,10 +46,9 @@ header {
 }
 
 .logo {
-  position: relative;
+  position: absolute;
   height: 250px;
   width: 250px;
-  z-index: 2;
   top: -30px;
   left: -30px;
 }
@@ -63,9 +58,9 @@ header {
 }
 
 .signature {
-  position: absolute;
-  top: -20px;
-  right: -80px;
+  position: relative;
+  top: -15%;
+  left: 75%;
   z-index: 3;
 }
 
@@ -84,6 +79,8 @@ header {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+  position: relative;
+  right: 40px;
 }
 
 .navbar a:hover {
@@ -91,15 +88,9 @@ header {
 }
 
 /* Body */
-.section {
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-  overflow: hidden;
-}
-
 .section.first {
-  height: 600px;
+  height: 775px;
+  overflow: hidden;
 }
 
 .headshot {
@@ -109,8 +100,8 @@ header {
   transform: rotate(-30deg);
   z-index: 3;
   position: absolute;
-  top: 65%;
-  left: 40%;
+  top: 10%;
+  left: 5%;
   background: transparent;
   overflow: hidden;
   border: 5px solid #102c57;
@@ -131,56 +122,32 @@ header {
 .arrow {
   background-image: url("../components/images/shapes/arrow.svg");
   background-repeat: no-repeat;
-  transform: scale(1.6);
+  transform: scale(1.2);
   position: absolute;
   height: 130px;
   width: 565px;
-  left: 15%;
-  top: 35%;
+  left: 5%;
+  top: 75%;
 }
 
 .arrow h2 {
   color: white;
-  font-size: 34pt;
+  font-size: 42pt;
   position: relative;
-  left: 25%;
-  top: -10%;
-}
-
-.csuslogo {
-  position: relative;
-  border-radius: 50%;
-  border: 7px solid #102c57;
-  height: 300px;
-  width: 300px;
-  left: 65%;
-  top: 40%;
-}
-
-.csuslogo img {
-  position: relative;
-  border-radius: 50%;
-}
-
-.csuslogo:hover {
-  animation: heartBeat;
-  animation-duration: 5s;
-  animation-timing-function: 2s;
-}
-
-.section.second {
-  height: 650px;
+  left: 20%;
+  top: -22%;
+  max-width: fit-content;
 }
 
 .star-8 {
   background-image: url("../components/images/shapes/8-star.svg");
   background-repeat: no-repeat;
-  transform: scale(1.4);
+  transform: scale(1.3);
   position: absolute;
   height: 490px;
   width: 490px;
-  left: 10%;
-  top: 135%;
+  left: 50%;
+  top: 30%;
 }
 
 .star-8 p {
@@ -193,49 +160,60 @@ header {
   top: 25%;
 }
 
-.section.third {
-  height: 1000px;
+.csuslogo {
+  position: relative;
+  border-radius: 50%;
+  border: 7px solid #102c57;
+  height: 250px;
+  width: 250px;
+  left: 52%;
+  top: 30%;
+  border: 5px solid #102C57;
+}
+
+.csuslogo img {
+  position: relative;
+  border-radius: 50%;
+}
+
+.csuslogo:hover {
+  animation: heartBeat;
+  animation-duration: 5s;
+}
+
+.section.second {
+  height: 100vh;
 }
 
 .blob {
   background-image: url("../components/images/shapes/blob.svg");
   background-repeat: no-repeat;
-  height: 540px;
-  width: 540px;
+  height: 700px;
+  width: 700px;
   transform: scale(1.5);
-  position: absolute;
-  left: 5%;
-  top: 220%;
+  position: relative;
+  left: 0%;
+  top: -5%;
 }
 
 .blob h3 {
   color: white;
-  font-size: 28pt;
+  font-size: 58pt;
   position: relative;
-  left: 30%;
+  left: 21%;
   top: 35%;
-}
-
-.arrow-1 {
-  background-image: url("../components/images/shapes/arrow1.svg");
-  background-repeat: no-repeat;
-  height: 350px;
-  width: 350px;
-  position: absolute;
-  transform: scale(1.3);
-  top: 285%;
-  left: 25%;
+  max-width: fit-content;
 }
 
 .starburst {
   background-image: url("../components/images/shapes/starburst.svg");
   background-repeat: no-repeat;
-  transform: scale(1.4);
-  position: absolute;
+  transform: scale(1.1);
+  position: relative;
   height: 600px;
   width: 600px;
   left: 58%;
-  top: 280%;
+  top: -66%;
 }
 
 .starburst p {
@@ -253,8 +231,19 @@ header {
   color: #DAC0A3
 }
 
-.section.fourth {
-  height: 800px;
+.section.third {
+  height: 100vh;
+}
+
+.arrow-1 {
+  background-image: url("../components/images/shapes/arrow1.svg");
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 350px;
+  position: absolute;
+  transform: scale(1.7) rotate(15deg);
+  top: 220%;
+  left: 10%;
 }
 
 .spbubble {
@@ -262,80 +251,15 @@ header {
   background-repeat: no-repeat;
   height: 530px;
   width: 600px;
-  transform: scale(1.4);
-  position: absolute;
+  transform: scale(1.5);
+  position: relative;
   display: grid;
-  left: 10%;
-  top: 350%;
+  left: 53%;
+  top: 18%;
 }
 
-.contactform button {
-  position: relative;
-  left: -10%;
-}
-
-.contactform {
-  position: relative;
-  transform: scale(0.75);
-  top: 16%;
-  left: 1%;
-}
-
-.contactform label {
-  position: relative;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  display: block;
-}
-
-.contactform input[type=text],
-.contactform input[type=email] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border-radius: 5px;
-  border: 1px solid grey;
-}
-
-.contactform textarea[type=text] {
-  width: 100%;
-  height: 150px;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border-radius: 5px;
-  border: 1px solid grey;
-  resize: none;
-}
-
-.contactform input[type=text]:focus,
-.contactform input[type=email]:focus,
-.contactform textarea[type=text]:focus {
-  background-color: #EADBC8;
-}
-
-.contactform button {
-  padding: 15px;
-  margin: 10px 170px;
-  border-radius: 5px;
-  left: 1%;
-  width: 250px;
-}
-
-.contactform button:hover {
-  color: white;
-  background-color: #DAC0A3;
-}
-
-.recaptcha {
-  position: relative;
-  left: 25%;
-}
-
-.section.fifth {
-  height: 600px;
+.section.fourth {
+  height: 100vh;
 }
 
 .circle {
@@ -343,25 +267,25 @@ header {
   height: 350px;
   width: 350px;
   border-radius: 50%;
-  border: 5px solid #102C57;
-  box-shadow: 5px 10px #88888862;
+  box-shadow: 5px 10px #102C57;
   cursor: pointer;
 }
 
 .circle.projects {
-  position: absolute;
+  position: relative;
   display: flex;
-  top: 420%;
-  left: 50%;
+  top: 10%;
+  left: 75%;
   transition: transform 1000ms;
+  border: 5px solid #102C57
 }
 
 .circle.resume {
-  position: absolute;
+  position: relative;
   display: flex;
-  top: 450%;
-  left: 75%;
+  left: 45%;
   transition: transform 1000ms;
+  border: 5px solid #102C57
 }
 
 .circle.projects h3 {
@@ -370,15 +294,14 @@ header {
   font-size: 35px;
   text-align: center;
   align-content: center;
-  left: 25%;
-  transition: transform 1000ms;
+  left: 30%;
 }
 
 .circle.projects:hover,
 .circle.projects:focus-visible {
-  transform: translate(-0.5rem, -0.5rem);
+  transform: translate(-1rem, -1rem);
   transition: transform 500ms;
-  box-shadow: 15px 20px #8888888a
+  box-shadow: 15px 20px #102C57
 }
 
 .circle.resume h3 {
@@ -387,14 +310,14 @@ header {
   font-size: 35px;
   text-align: center;
   align-content: center;
-  left: 25%;
+  left: 30%;
 }
 
 .circle.resume:hover,
 .circle.resume:focus-visible {
-  transform: translate(-0.5rem, -0.5rem);
+  transform: translate(-1rem, -1rem);
   transition: transform 500ms;
-  box-shadow: 15px 20px #8888888a
+  box-shadow: 15px 20px #102C57
 }
 
 /* Footer */
@@ -422,439 +345,17 @@ header {
   --_r: calc(var(--r)/tan(22.5deg)), #000 98%, #0000 101%;
   background: #102c57;
   position: relative;
-  bottom: 910%;
-  z-index: 2;
+  bottom: 940%;
+  z-index: 10;
   transform: rotate(180deg);
 }
 
+/* Scroll Snap */
+
+
 /* Responsive Design */
-@media screen and (max-width: 1750px) {
-  .starburst {
-    transform: scale(1.1);
-  }
-  
-  .signature {
-    transform: scale(0.7);
-  }
-}
-
-@media screen and (max-width: 1500px) {
-  .headshot {
-    left: 30%;
-  }
-
-  .arrow-1 {
-    transform: scale(0.8);
-    left: 12%;
-  }
-
-  .starburst {
-    left: 46%;
-  }
-
-  .spbubble {
-    transform: scale(1.2);
-  }
-
-  .circle.projects {
-    transform: scale(0.8);
-    top: 410%;
-    left: 45%;
-  }
-
-  .circle.resume {
-    transform: scale(0.8);
-    top: 430%;
-  }
-}
-
-@media screen and (max-width: 1250px) {
-  .arrow {
-    transform: scale(1.2);
-    top: 45%;
-    left: 10%;
-  }
-
-  .headshot {
-    top: 72%;
-    left: 12%;
-  }
-
-  .star-8 {
-    transform: scale(1.2);
-  }
-
-  .starburst {
-    left: 35%;
-  }
-
-  .arrow-1 {
-    left: 2%;
-    transform: rotate(30deg);
-  }
-
-  .spbubble {
-    top: 365%;
-  }
-
-  .circle.projects {
-    top: 435%;
-    left: 35%;
-  }
-
-  .circle.resume {
-    top: 455%;
-    left: 65%;
-  }
-}
-
 @media screen and (max-width: 1000px) {
-
-  .body {
-    overflow: hidden;
+  * {
+    border: 1px solid red !important;
   }
-
-  .logo {
-    display: none;
-  }
-
-  .phonenav {
-    visibility: visible;
-  }
-
-  .triangle {
-    display: none;
-  }
-  
-  .logo {
-    position: relative;
-    height: 115px;
-    width: 115px;
-    z-index: 3;
-    top: -23px;
-    left: -5px;
-  }
-
-  .signature {
-    display: none;
-  }
-  
-  .triangle-bottom {
-    display: none;
-  }
-
-  .arrow {
-    transform: scale(1.1);
-    left: 21%;
-    top: 25%;
-  }
-
-  .arrow h2 {
-    max-width: 325px;
-  }
-  
-  .headshot {
-    transform: scale(0.75) rotate(-30deg);
-    left: 0%;
-    top: 50%;
-  }
-
-  .star-8 {
-    top: 105%;
-    left: 28%;
-  }
-
-  .csuslogo {
-    left: 25%;
-    top: 45%;
-  }
-
-  .blob {
-    transform: scale(1.1);
-    top: 220%;
-    left: 24%;
-  }
-
-  .blob h3 {
-    max-width: 325px;
-  }
-
-  .recaptcha {
-    max-width: 325px;
-  }
-
-  .arrow-1 {
-    display: none;
-  }
-
-  .starburst {
-    left: 5%;
-    transform: scale(1);
-  }
-
-  .spbubble {
-    transform: scale(1);
-    left: 18%;
-    top: 350%;
-  }
-
-  .circle.projects {
-    top: 425%;
-    left: 10%;
-  }
-
-  .circle.resume {
-    top: 439%;
-    left: 55%;
-  }
-}
-
-@media screen and (max-width: 750px) {
-
-  .navbar a {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-right: 5px;
-    margin-left: 5px;
-  } 
-
-  .arrow {
-    transform: scale(0.8);
-    left: 0%;
-    top: 20%;
-  }
-
-  .headshot {
-    transform: scale(0.5) rotate(-30deg);
-    top: 35%;
-    left: 0%;
-  }
-
-  .star-8 {
-    transform: scale(0.7);
-    top: 70%;
-    left: 0%;
-  }
-
-  .csuslogo {
-    display: none;
-  }
-
-  .blob {
-    transform: scale(0.8);
-    top: 115%;
-    left: 20%;
-  }
-
-  .starburst {
-    transform: scale(0.6);
-    top: 155%;
-    left: -5%;
-  }
-
-  .spbubble {
-    transform: scale(0.6);
-    left: 10%;
-    top: 200%;
-  }
-
-  .circle.projects {
-    transform: scale(0.5);
-    top: 250%;
-  }
-  .circle.resume {
-    transform: scale(0.5);
-    top: 265%;
-    left: 45%;
-  }
-
-  .section.fourth {
-    height: 0;
-  }
-
-  .section.fifth {
-    height: 0;
-  }
-}
-
-@media screen and (max-width: 625px) {
-  .arrow {
-    left: -5%;
-  }
-
-  .headshot {
-    top: 35%;
-    left: -25%;
-  }
-  
-  .blob {
-    top: 115%;
-    left: 0%;
-  }
-
-  .spbubble {
-    left: -10%;
-  }
-
-  .circle.projects {
-    left: 0%;
-  }
-  
-  .circle.resume {
-    left: 35%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-
-  .arrow {
-    transform: scale(0.6);
-    left: -15%;
-    top: 20%;
-  }
-
-  .headshot {
-    transform: scale(0.4) rotate(-30deg);
-    top: 35%;
-    left: -30%;
-  }
-
-  .star-8 {
-    transform: scale(0.6);
-    top: 70%;
-    left: 0%;
-  }
-
-  .blob {
-    transform: scale(0.6);
-    left: -12%;
-  }
-
-  .starburst {
-    transform: scale(0.5);
-    left: -15%;
-  }
-
-  .spbubble {
-    transform: scale(0.5);
-    left: -20%;
-  }
-
-  .circle.projects {
-    left: -10%;
-  }
-
-  .circle.resume {
-    left: 25%;
-  }
-
-}
-
-@media screen and (max-width: 450px) {
-  .headshot {
-    left: -45%;
-  }
-  
-}
-
-@media screen and (max-width: 400px) {
-
-  .arrow {
-    left: -22%;
-  }
-
-  .headshot {
-    left: -54%;
-  }
-
-  .star-8 {
-    left: -15%;
-  }
-
-  .blob {
-    left: -28%;
-  }
-
-  .starburst {
-    left: -30%;
-  }
-
-  .spbubble {
-    left: -30%;
-  }
-
-  .circle.projects {
-    left: -20%;
-  }
-
-  .circle.resume {
-    left: 20%;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .arrow {
-    left: -30%;
-  }
-
-  .headshot {
-    left: -67%;
-  }
-
-  .navbar a {
-    font-size: 12pt;
-  } 
-}
-
-@media screen and (max-width: 350px) {
-
-  .footer {
-    display: none;
-  }
-
-  .navbar a {
-    font-size: 10pt;
-  } 
-
-  .arrow {
-    transform: scale(0.5);
-    left: -35%;
-  }
-
-  .headshot {
-    transform: scale(0.35) rotate(-30deg);
-    left: -65%;
-  }
-
-  .star-8 {
-    left: -25%;
-  }
-
-  .blob {
-    left: -35%;
-  }
-
-  .starburst {
-    left: -40%;
-  }
-  
-  .spbubble {
-    left: -40%;
-  }
-
-  .circle.projects {
-    transform: scale(0.4);
-  }
-
-  .circle.resume {
-    transform: scale(0.4);
-  }
-}
-
-@media screen and (max-width: 325px) {
-  * { border: 1px solid red !important; }
-}
-
-@media screen and (max-width: 300px) {
-  * { border: 1px solid red !important; }
 }

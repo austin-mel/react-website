@@ -1,6 +1,7 @@
 import emailjs from "@emailjs/browser";
 import React, { useState, useRef } from "react";
 import ReCAPTCHA from 'react-google-recaptcha';
+import "../../styles/Form.css"
 
 function Form() {
     const [email, setEmail] = useState("");
